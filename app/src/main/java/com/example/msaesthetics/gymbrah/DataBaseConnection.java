@@ -1,11 +1,9 @@
 package com.example.msaesthetics.gymbrah;
-import android.widget.EditText;
 
 import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.*;
 
-import javax.xml.transform.Result;
+
 
 /**
  * Created by Ms Aesthetics on 24. 08. 2018.
