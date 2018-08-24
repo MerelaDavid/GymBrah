@@ -66,7 +66,6 @@ public class DataBaseConnection {
 
     static void UsserSignUp(Connection con,int UserId,String Username,String email,String passwd){
         Statement st;
-        ResultSet rs;
         String State = "INSERT INTO GymUser VALUES (%d,%s,%s,%s)";
         try{
             st=con.createStatement();
@@ -82,7 +81,6 @@ public class DataBaseConnection {
 
     static void UsserGymChoice(Connection con,int UserID,int GymId ){
         Statement st;
-        ResultSet rs;
         String State = "INSERT INTO UserToGymId VALUES (%d,%d)";
         try{
             st=con.createStatement();
