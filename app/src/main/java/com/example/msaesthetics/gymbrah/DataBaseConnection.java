@@ -51,10 +51,10 @@ public class DataBaseConnection {
             st = con.createStatement();
             rs= st.executeQuery(String.format(State,email));
             if(!rs.next()){
-                EmailValidate=false;
+                EmailValidate=true;
             }
             else{
-                EmailValidate=true;
+                EmailValidate=false;
             }
         }catch(Exception e){
             System.out.println("Napaka pri preverjanju obstoja uporabnika");
@@ -143,6 +143,23 @@ public class DataBaseConnection {
             System.out.println("error at Users MaxId fn" + e.getMessage());
         }
         return UsserId;
+    }
+    static Boolean UserNameCheck(Connection con,String Username){
+        Statement st;
+        ResultSet rs;
+        Boolean UserName = false;
+        String State="select UserId FROM GymUser where Username = %s";
+        try{
+            st= con.createStatement();
+            rs=st.executeQuery(String.format(State,Username));
+            if(!rs.next()){
+                UserName= true;
+            }
+
+        }catch(Exception e){
+            System.out.println("error at Users MaxId fn" + e.getMessage());
+        }
+        return UserName;
     }
 
 
