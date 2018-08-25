@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">GymBrah</string>
+    <string name="lets_start_lifting">Lets start lifting</string>
+    <string name="are_you_ready">Are you ready</string>
+    <string name="email">email</string>
+    <string name="password">password</string>
+    <string name="welcome">WELCOME</string>
+    <string name="gymbrah">GymBrah</string>
+    <string name="login">Login</string>
+    <string name="or">Or</string>
+    <string name="signup">SignUp</string>
 </resources>

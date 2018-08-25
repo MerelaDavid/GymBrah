@@ -15,7 +15,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="44dp"
-        android:text="Welcome to aesthetic society"
+        android:text="@string/Welcome to aesthetic society"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
         android:textSize="30sp"
@@ -48,7 +48,7 @@
         android:layout_marginStart="8dp"
         android:ems="10"
         android:hint="Email"
-        android:inputType="textPersonName"
+        android:inputType="textEmailAddress"
         app:layout_constraintBottom_toTopOf="@+id/Password1"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -82,10 +82,11 @@
         android:layout_height="43dp"
         android:layout_marginBottom="156dp"
         android:layout_marginEnd="32dp"
-        android:text="SignUp"
+        android:text="@string/SignUp"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Caption"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="SignUp" />
 </android.support.constraint.ConstraintLayout>
